@@ -15,6 +15,7 @@
     --card-title: #6f717e;
     --switch-spinner: white;
     --switch: #5f616d;
+    --cardhover: #e3e3ee;
 }
 .wrapper{
     padding: 0 30px;
@@ -108,6 +109,10 @@ h1{
     right: 0;
     top: 0;
 }
+.card:hover{
+    background: var(--cardhover);
+    cursor: pointer;
+}
 .card.fb::before{
     background: var(--facebook);
     
@@ -175,6 +180,10 @@ h2{
     background: var(--card-gray);
     border-radius: 8px;
     padding: 1.7em;
+}
+.card-small:hover{
+    background: var(--cardhover);
+    cursor: pointer;
 }
 .card-small p{
     margin: 0;
@@ -258,10 +267,12 @@ h2{
         --card-title: #8088ad;
         --switch-spinner: #282943;
         --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+        --cardhover: #2d385f;
 }
 .is-light-mode{
         --gray: #5f616d;
         --card-gray: #f0f3fa;
+        --cardhover: #e3e3ee;
         --light-gray: #f8f9fe;
         --base-background: white;
         --base-color: #1d2029;
